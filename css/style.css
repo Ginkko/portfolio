@@ -43,3 +43,74 @@ img {
 hr , .jumbotron > hr {
   border-color: black;
 }
+
+.onoffswitch {
+    position: relative;
+    width: 67px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 22px;
+    padding: 0;
+    line-height: 22px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    padding-left: 10px;
+}
+.onoffswitch-inner:after {
+    padding-right: 10px;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 20px; margin: 1px;
+    position: absolute; top: 0; bottom: 0;
+    right: 41px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 60px;
+    background-color: rgba(0,0,0,0);
+    opacity: 0;
+}
+.onoffswitch-inner {
+    display: block;
+    margin: 1px;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../public/img/speaker-off.png");
+    background-size: 30px 30px;
+    position: fixed;
+    top: 4px;
+    right: 20px;
+}
+.onoffswitch-switch {
+    width: 30px;
+    height: 30px;
+    background-image: url("../public/img/speaker-on.png");
+    background-size: 30px 30px;
+    position: fixed;
+    top: 4px;
+    right: 20px;
+}
+/*END VOLUME SWITCH*/
